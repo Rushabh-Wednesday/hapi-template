@@ -1,0 +1,6 @@
+    CREATE TABLE cab_types
+    (
+        id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+        cab_type VARCHAR(32) NOT NULL UNIQUE,
+        created_at DATETIME DEFAULT CURRENT_TIMESTAMP NOT NULL
+    )
