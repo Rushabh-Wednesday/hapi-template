@@ -1,0 +1,4 @@
+    ALTER TABLE booking 
+     MODIFY COLUMN pickup_location GEOMETRY NOT NULL,
+     MODIFY COLUMN drop_location GEOMETRY NOT NULL,
+     MODIFY COLUMN fare DECIMAL(7,2);
