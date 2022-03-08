@@ -84,6 +84,10 @@ const initServer = async () => {
                     {
                         name: 'reset-cache',
                         description: 'Cache invalidation endpoints'
+                    },
+                    {
+                        name: 'drivers',
+                        description: 'Driver realted end points'
                     }
                 ]
             }
