@@ -105,6 +105,22 @@ export const mockData = {
         id: 1,
         booking_attempt_id: 1,
         driver_id: 1
+    },
+    MOCK_USER_: {
+        //id: 1,
+        firstName: 'Sharan',
+        lastName: 'Salian',
+        email: 'sharan@wednesday.is',
+        mobileNo: '8585959522',
+        gender: 'male'
+    },
+    MOCK_BOOKING_ATTEMPT_: {
+        id: 1,
+        userId: 1,
+        pickupLocation: [18.47763, 73.88786],
+        dropLocation: [18.48763, 73.89786],
+        rideStatus: 'accepted',
+        fare: 73
     }
 };
 

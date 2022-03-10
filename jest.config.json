@@ -14,5 +14,9 @@
             "functions": 88,
             "lines": 88
         }
-    }
+    },
+    "coveragePathIgnorePatterns": [
+        "<rootDir>/node_modules/",
+        "<rootDir>/utils/testUtils.js"
+    ]
 }

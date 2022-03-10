@@ -59,8 +59,10 @@ export function configDB(metadataOptions = DEFAULT_METADATA_OPTIONS) {
 
     const bookingAttemptMock = DBConnectionMock.define(
         'booking_attempts',
-        mockData.MOCK_BOOKING_ATTEMPT
+        mockData.MOCK_BOOKING_ATTEMPT_
     );
+
+    // bookingAttemptMock.findBookingAttempts = query => bookingAttemptMock.findById(query)
 
     const bookingsMock = DBConnectionMock.define(
         'bookings',
