@@ -23,3 +23,11 @@ export const transformDbArrayResponseToRawResponse = arr => {
         );
     }
 };
+
+export const filterRecord = (arr, record) => {
+    if (!isArray(arr)) {
+        throw new Error('The required type should be an object(array)');
+    } else {
+        arr.forEach(key => delete record.dataValues[key]);
+    }
+};

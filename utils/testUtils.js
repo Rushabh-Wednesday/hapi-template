@@ -62,12 +62,14 @@ export function configDB(metadataOptions = DEFAULT_METADATA_OPTIONS) {
         mockData.MOCK_BOOKING_ATTEMPT_
     );
 
-    // bookingAttemptMock.findBookingAttempts = query => bookingAttemptMock.findById(query)
+    bookingAttemptMock.findByPk = query => bookingAttemptMock.findById(query);
 
     const bookingsMock = DBConnectionMock.define(
         'bookings',
         mockData.MOCK_BOOKINGS
     );
+
+    bookingsMock.findByPk = query => bookingsMock.findById(query);
 
     return {
         users: userMock,

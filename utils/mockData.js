@@ -121,6 +121,44 @@ export const mockData = {
         dropLocation: [18.48763, 73.89786],
         rideStatus: 'accepted',
         fare: 73
+    },
+    CREATE_DRIVER_PAYLOAD: {
+        firstName: 'Jhon',
+        lastName: 'Wick',
+        email: 'wick@jhon.is',
+        mobileNo: '8585959524',
+        cabTypeId: 1,
+        cabNumber: 'MH 20 9211',
+        gender: 'male'
+    },
+
+    DRIVER_LOCATION_PAYLOAD: {
+        driverId: 1,
+        currentLocation: [18.52043, 73.856743],
+        status: 'active'
+    },
+
+    ACCEPT_BOOKING_PAYLOAD: {
+        driverId: 1,
+        bookingAttemptId: 1
+    },
+    CREATE_USER_PAYLOAD: {
+        firstName: 'Sharan',
+        lastName: 'Salian',
+        email: 'sharan@wednesday.is',
+        mobileNo: '8585959522',
+        gender: 'male'
+    },
+
+    BOOKING_PAYLOAD: {
+        pickupLocation: [18.47763, 73.88786],
+        dropLocation: [18.48763, 73.89786],
+        rideStatus: 'pending',
+        fare: 73
+    },
+
+    FINDING_CAB_PAYLOAD: {
+        pickupLocation: [18.47763, 73.88786]
     }
 };
 
